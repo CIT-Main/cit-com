@@ -5,8 +5,9 @@ import ContactPage from './contact'
 import SponsorshipPage from './sponsorship'
 import NotFoundPage from './404/404'
 import HomePage from './Home'
-import { PageTitleUpdater } from '@/components/Hook/PageTitleUpdater.hook';
-import Layout from '@/components';
+import { PageTitleUpdater } from '../components/Hook/PageTitleUpdater.hook';
+import Layout from '../components';
+
 export function AppRouter() {
   return (
     <Router>

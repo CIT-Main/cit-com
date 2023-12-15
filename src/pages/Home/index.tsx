@@ -1,9 +1,16 @@
+import CTA1 from "../../components/Homepage/CTA1"
+import CTA2 from "../../components/Homepage/CTA2"
+
+
 const HomePage = () => {
   return (
     <>
-      <div>
-        <h1 className="text-center font text-red-900   font-bold text-3xl "> START </h1>
-      </div>
+      <>
+      < CTA1 />
+      < CTA2 />
+      
+      
+      </>
     </>
   )
 }
