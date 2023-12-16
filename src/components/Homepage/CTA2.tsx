@@ -1,4 +1,4 @@
-import firstImage from '../../app/assets/Images/CTA2_image.jpg'
+import firstImage from '../../app/assets/Images/Homepage/CTA2_image .jpg'
 const CTA2 = () => {
   return (
     <>
@@ -13,10 +13,8 @@ const CTA2 = () => {
               />
             </div>
             <div className="max-w-xl px-4 space-y-3 mt-6 sm:px-0 md:mt-0 lg:max-w-2xl">
-              <h3 className="text-indigo-600 font-semibold">
-                JOIN US AND ENJOY
-              </h3>
-              <p className="text-gray-800 text-3xl font-semibold sm:text-4xl">
+              
+              <p className="text-[#f6bd00]  text-3xl font-semibold sm:text-4xl">
                 We are providing recreational facilities
               </p>
               <p className="mt-3 text-gray-600">
@@ -29,7 +27,7 @@ const CTA2 = () => {
               <button 
               
               
-              className="inline-flex gap-x-1 items-center bg-gray-400  rounded-lg text-white  p-3   duration-150 font-medium">
+              className="inline-flex gap-x-1 items-center bg-[#f6bd00]  rounded-lg text-white  p-3   duration-150 font-medium">
                 Learn more
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

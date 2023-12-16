@@ -1,7 +1,6 @@
 
 import Footer from "./layouts/footer"
-import Nav from "./layouts/header/Nav"
-
+import Header from "./layouts/header";
 type LayoutProps = {
   children: React.ReactNode;
 };
@@ -9,15 +8,17 @@ type LayoutProps = {
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <>
-      <Nav />
+      < Header />
+
+       
 
       <section>
-        <h1>Header</h1>
+       
         {children} {/* Render the children here */}
       </section>
 
-      <section>
-        <Footer />
+      <section className="hidden">
+        <Footer  />
       </section>
     </>
   )
