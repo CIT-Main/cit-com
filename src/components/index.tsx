@@ -17,7 +17,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         {children} {/* Render the children here */}
       </section>
 
-      <section className="hidden">
+      <section >
         <Footer  />
       </section>
     </>
