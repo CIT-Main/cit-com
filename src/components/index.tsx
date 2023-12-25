@@ -1,27 +1,24 @@
 
-import Footer from "./layouts/footer"
-import Header from "./layouts/header";
+import Footer from './layouts/footer/Footer'
+import Header from './layouts/header'
 type LayoutProps = {
-  children: React.ReactNode;
-};
+  children: React.ReactNode
+}
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <>
-      < Header />
-
-       
+      <Header />
 
       <section>
-       
         {children} {/* Render the children here */}
       </section>
 
-      <section >
-        <Footer  />
+      <section>
+        <Footer />
       </section>
     </>
   )
 }
 
-export default Layout;
+export default Layout

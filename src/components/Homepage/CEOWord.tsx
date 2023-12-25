@@ -1,3 +1,6 @@
+
+import CTOImage from '../../app/assets/Images/Homepage/CE0-image.jpg'
+
 const CEOWord = () => {
   return (
     <>
@@ -15,8 +18,8 @@ const CEOWord = () => {
               </blockquote>
               <div className="mt-6">
                 <img
-                  src="https://api.uifaces.co/our-content/donated/xZ4wg2Xj.jpg"
-                  className="w-16 h-16 mx-auto rounded-full"
+                  src={CTOImage}
+                  className="w-40 h-40  object-cover  mx-auto rounded-full"
                 />
                 <div className="mt-3">
                   <span className="block text-[#F6BE00] font-semibold">
