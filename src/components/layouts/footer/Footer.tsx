@@ -1,11 +1,7 @@
-import { FaFacebook } from "react-icons/fa";
-import { BsTwitterX } from "react-icons/bs";
-import { FaLinkedin } from "react-icons/fa6";
-import logo  from "../../../app/assets/Images/Logo/CIT.jpg";
-
-
-
-
+import { BsTwitterX } from 'react-icons/bs'
+import { FaFacebook } from 'react-icons/fa'
+import { FaLinkedin } from 'react-icons/fa6'
+import logo from '../../../app/assets/Images/Logo/CIT.jpg'
 
 const footerNavs = [
   {
@@ -79,14 +75,13 @@ const Footer = () => {
       <div className="gap-6 justify-between md:flex">
         <div className="flex-1">
           <div className="max-w-xs">
-            <img src={logo}  className="w-20 rounded-lg" />
+            <img src={logo} className="w-20 rounded-lg" />
             <p className="leading-relaxed mt-2  text-white text-[15px]">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
               necessitatibus incidunt ut officiis explicabo, quia, voluptatum
               voluptatem, voluptates fugit quibusdam quos. Quisquam, quia?
             </p>
           </div>
-      
         </div>
         <div className="flex-1  text-white mt-10 space-y-6 items-center justify-between sm:flex md:space-y-0 md:mt-0">
           {footerNavs.map((item, idx) => (
@@ -113,28 +108,21 @@ const Footer = () => {
         <div className="mt-6 sm:mt-0">
           <ul className="flex items-center space-x-4">
             <li className="w-10 h-10 border  text-white rounded-full flex items-center justify-center">
-            <FaLinkedin />
-
+              <FaLinkedin />
             </li>
 
             <li className="w-10 h-10 border  text-white  rounded-full flex items-center justify-center">
-            <BsTwitterX />
-
-              
+              <BsTwitterX />
             </li>
 
             <li className="w-10 h-10 border  text-white rounded-full flex items-center justify-center">
-            <FaFacebook />
-
+              <FaFacebook />
             </li>
-        {/*  the name of the game sis sodsfsd some  */}
+            {/*  the name of the game sis sodsfsd some  */}
 
-          <section>
-            <div className=" text-2xl   font">'
-
-            </div>
-          </section>
-         
+            <section>
+              <div className=" text-2xl   font">'</div>
+            </section>
           </ul>
         </div>
       </div>

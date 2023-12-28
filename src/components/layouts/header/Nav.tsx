@@ -5,11 +5,14 @@ import { FaEnvelope, FaLinkedin } from 'react-icons/fa'
 import { FaXTwitter } from 'react-icons/fa6'
 import logo from '../../../app/assets/Images/Logo/CIT.jpg'
 
+import { Link } from 'react-router-dom'
+
 const navigation = [
-  { name: 'Home', href: '#', current: true },
-  { name: 'About', href: '#', current: false },
-  { name: 'Contact', href: '#', current: false },
-  { name: 'Sponsorship', href: '#', current: false },
+  { name: 'Home', href: '/', current: true },
+  { name: 'Team', href: '/team', current: false },
+  { name: 'Events', href: '/events', current: false },
+  { name: 'Contact', href: '/contact', current: false },
+  { name: 'Sponsorship', href: '/sponsorship', current: false },
 ]
 
 function classNames(...classes: string[]) {
@@ -23,13 +26,10 @@ export default function Nav() {
         <>
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="flex h-16  justify-between">
-
               {/*  TODO:fixing the responsiveness in the small devices  */}
               <div className="flex justify-between h-16 ">
                 {/* Mobile menu button */}
-                <div>
-                  
-                </div>
+                <div></div>
                 <div className="ml-auto flex   items-center md:hidden">
                   <Disclosure.Button className="relative inline-flex items-center justify-center bg-gray-100 rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                     {open ? (
@@ -46,9 +46,9 @@ export default function Nav() {
                 </div>
                 <div className="hidden md:ml-6 md:flex md:items-center md:space-x-4">
                   {navigation.map((item) => (
-                    <a
+                    <Link
                       key={item.name}
-                      href={item.href}
+                      to={item.href}
                       className={classNames(
                         item.current
                           ? 'bg-gray-900 text-white'
@@ -58,7 +58,7 @@ export default function Nav() {
                       aria-current={item.current ? 'page' : undefined}
                     >
                       {item.name}
-                    </a>
+                    </Link>
                   ))}
                 </div>
               </div>

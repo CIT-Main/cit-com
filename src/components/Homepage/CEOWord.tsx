@@ -1,4 +1,3 @@
-
 import CTOImage from '../../app/assets/Images/Homepage/CE0-image.jpg'
 
 const CEOWord = () => {
@@ -7,7 +6,6 @@ const CEOWord = () => {
       <section className="relative py-28 bg-gray-900">
         <div className="relative z-10 max-w-screen-xl mx-auto px-4 md:px-8">
           <div className="max-w-3xl mx-auto text-center">
-      
             <figure>
               <blockquote>
                 <p className="text-white text-xl font-semibold sm:text-2xl">
@@ -33,7 +31,6 @@ const CEOWord = () => {
             </figure>
           </div>
         </div>
-      
       </section>
     </>
   )

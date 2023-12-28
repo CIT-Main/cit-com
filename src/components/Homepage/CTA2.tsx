@@ -13,7 +13,6 @@ const CTA2 = () => {
               />
             </div>
             <div className="max-w-xl px-4 space-y-3 mt-6 sm:px-0 md:mt-0 lg:max-w-2xl">
-              
               <p className="text-[#f6bd00]  text-3xl font-semibold sm:text-4xl">
                 We are providing recreational facilities
               </p>
@@ -24,10 +23,7 @@ const CTA2 = () => {
                 mollit anim id est laborum, sed ut perspiciatis unde omnis iste
                 natus error sit voluptatem accusantium doloremque laudantium
               </p>
-              <button 
-              
-              
-              className="inline-flex gap-x-1 items-center bg-[#f6bd00]  rounded-lg text-white  p-3   duration-150 font-medium">
+              <button className="inline-flex gap-x-1 items-center bg-[#f6bd00]  rounded-lg text-white  p-3   duration-150 font-medium">
                 Learn more
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

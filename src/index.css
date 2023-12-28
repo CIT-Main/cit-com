@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+
+/*  Images slide css  */
+
+.slide-container {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  scroll-snap-type: x mandatory;
+  background-color: black;
+}
+
+.slide-container::before,
+.slide-container::after {
+  content: '';
+  flex: 0 0 auto;
+  width: 10%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.slide-container::before {
+  background: linear-gradient(to right, black, transparent);
+}
+
+.slide-container::after {
+  background: linear-gradient(to left, black, transparent);
+}
+
+.slide-container > div {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-out;
+  position: relative;
+}
+
+.slide-container > div:hover {
+  transform: scale(1.1);
+}
+
+.slide-container img,
+.slide-anim img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  opacity: 0;
+  animation: fadeIn 3s ease-out forwards;
+  transition: all 1s ease-out;
+  max-width: 100%;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.slide-container:hover img,
+.animate-fadeIn {
+  animation: fadeIn 2s ease-out 2s forwards;
+  transition: all 1s ease-out;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
