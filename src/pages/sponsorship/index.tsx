@@ -1,6 +1,4 @@
-
-
-const SponsorshipPage   = () => {
+const SponsorshipPage = () => {
   return (
     <div>
       <h1 className="tex-center">Sponsorship Page</h1>

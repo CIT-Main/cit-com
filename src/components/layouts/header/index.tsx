@@ -1,19 +1,13 @@
-
+import Hero from './Hero'
 import Nav from './Nav'
 
 const Header = () => {
   return (
-  <>
-  <Nav />
-
-  <section>
-
-    <h1 className="text-center">Header</h1>
-  </section>
-  
-  
-  </>
+    <>
+      <Nav />
+      <Hero />
+    </>
   )
 }
 
-export default  Header
+export default Header
